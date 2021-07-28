@@ -4,6 +4,8 @@ import ComponentsOne from '../components/ComponentsOne';
 import ComponentsThree from '../components/ComponentsThree';
 import ComponentsTwo from '../components/ComponentsTwo';
 import FunState from '../components/FunState';
+import HeightWidth from '../components/HeightWidth';
+import ImageView from '../components/ImageView';
 import State from '../components/State';
 
 class PageOne extends Component {
@@ -19,6 +21,8 @@ class PageOne extends Component {
                 <ComponentsThree/>
                 <State/>
                 <FunState/>
+                <ImageView/>
+                <HeightWidth/>
             </View>
         );
     }
