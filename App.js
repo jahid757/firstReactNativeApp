@@ -11,7 +11,7 @@ class App extends Component {
     }
 
     return (
-      <ScrollView>
+      <ScrollView horizontal={false}>
         <Text style={{color:'red',fontSize:20}}>Bangladesh</Text>
         <Text style={styles.green}>Is My Country <Text style={{color:'white',fontSize:20}}>I Love My Country</Text></Text>
         <Text style={customStyle.yellow}>External Style</Text>

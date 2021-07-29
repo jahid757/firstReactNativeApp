@@ -3,6 +3,7 @@ import {View, StyleSheet} from 'react-native';
 import ComponentsOne from '../components/ComponentsOne';
 import ComponentsThree from '../components/ComponentsThree';
 import ComponentsTwo from '../components/ComponentsTwo';
+import FlatListData from '../components/FlatListData';
 import FunState from '../components/FunState';
 import HeightWidth from '../components/HeightWidth';
 import ImageView from '../components/ImageView';
@@ -23,6 +24,7 @@ class PageOne extends Component {
                 <FunState/>
                 <ImageView/>
                 <HeightWidth/>
+                <FlatListData/>
             </View>
         );
     }
