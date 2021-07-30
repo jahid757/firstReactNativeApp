@@ -1,11 +1,15 @@
 import React from 'react';
-import {TouchableOpacity, StyleSheet,Text} from 'react-native';
+import { TouchableOpacity, StyleSheet, Text, View } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 const TodoItem = ({item,handler}) => {
     return (
-        <TouchableOpacity onPress={() => handler(item.key)}>
-            <Text style={styles.item}>{item.title}</Text>
-        </TouchableOpacity>
+        <View style={styles.item}>
+            <Text>{item.title}</Text>
+            <TouchableOpacity onPress={() => handler(item.key)}>
+                <Icon name="delete" size={30} color="red"/>
+            </TouchableOpacity>
+        </View>
     );
 }
 
@@ -16,7 +20,10 @@ const styles = StyleSheet.create({
         borderWidth:1,
         borderRadius:10,
         borderColor:'#bbb',
-        borderStyle:'dashed'
+        borderStyle:'dashed',
+        flexDirection:'row',
+        justifyContent:'space-between',
+        alignItems:'center'
     }
 })
 
