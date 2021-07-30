@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { View, StyleSheet, Text, Button,FlatList } from 'react-native';
+import { View, StyleSheet, Button } from 'react-native';
 import DataLoop from './DataLoop';
 
 const FlatListData = () => {

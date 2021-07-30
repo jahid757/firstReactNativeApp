@@ -3,11 +3,15 @@ import {View, StyleSheet} from 'react-native';
 import ComponentsOne from '../components/ComponentsOne';
 import ComponentsThree from '../components/ComponentsThree';
 import ComponentsTwo from '../components/ComponentsTwo';
+import FlatListClass from '../components/FlatListClass';
 import FlatListData from '../components/FlatListData';
 import FunState from '../components/FunState';
+import GridFlatList from '../components/GridFlatList';
 import HeightWidth from '../components/HeightWidth';
+import HorizontalFlatList from '../components/HorizontalFlatList';
 import ImageView from '../components/ImageView';
 import State from '../components/State';
+import TextInputData from '../components/TextInputData';
 
 class PageOne extends Component {
     info ={
@@ -25,6 +29,10 @@ class PageOne extends Component {
                 <ImageView/>
                 <HeightWidth/>
                 <FlatListData/>
+                <FlatListClass/>
+                <HorizontalFlatList/>
+                <GridFlatList/>
+                <TextInputData/>
             </View>
         );
     }
