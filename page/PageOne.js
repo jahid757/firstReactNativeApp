@@ -12,7 +12,7 @@ import HorizontalFlatList from '../components/HorizontalFlatList';
 import ImageView from '../components/ImageView';
 import State from '../components/State';
 import TextInputData from '../components/TextInputData';
-import Todo1 from '../components/Todo1';
+import Todo from '../components/Todo';
 
 class PageOne extends Component {
     info ={
@@ -34,7 +34,7 @@ class PageOne extends Component {
                 <HorizontalFlatList/>
                 <GridFlatList/>
                 <TextInputData/>
-                <Todo1/>
+                <Todo/>
             </View>
         );
     }

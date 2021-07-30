@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {ScrollView, StyleSheet,Text,Button,Alert} from 'react-native';
+import {ScrollView, StyleSheet,Text,Button,Alert,TouchableWithoutFeedback, Keyboard} from 'react-native';
 import customStyle from './customStyle';
 import PageOne from './page/PageOne';
 
@@ -11,13 +11,17 @@ class App extends Component {
     }
 
     return (
-      <ScrollView horizontal={false}>
-        <Text style={{color:'red',fontSize:20}}>Bangladesh</Text>
-        <Text style={styles.green}>Is My Country <Text style={{color:'white',fontSize:20}}>I Love My Country</Text></Text>
-        <Text style={customStyle.yellow}>External Style</Text>
-        <Button onPress={alert} style={styles.green} title="Alert Button"/>
-        <PageOne/>
-      </ScrollView>
+      <TouchableWithoutFeedback onPress={() => 
+        Keyboard.dismiss()
+      }>
+        <ScrollView showsVerticalScrollIndicator={false} horizontal={false}>
+          <Text style={{color:'red',fontSize:20}}>Bangladesh</Text>
+          <Text style={styles.green}>Is My Country <Text style={{color:'white',fontSize:20}}>I Love My Country</Text></Text>
+          <Text style={customStyle.yellow}>External Style</Text>
+          <Button onPress={alert} style={styles.green} title="Alert Button"/>
+          <PageOne/>
+        </ScrollView>
+      </TouchableWithoutFeedback>
     );
   }
 

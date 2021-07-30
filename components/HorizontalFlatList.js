@@ -58,7 +58,7 @@ class HorizontalFlatList extends Component {
 
     render() {
         return (
-            <FlatList horizontal={true} data={this.myData} renderItem={({item}) => <this.ChildView user={item} key={item.id} />} />
+            <FlatList showsHorizontalScrollIndicator={false} horizontal={true} data={this.myData} renderItem={({item}) => <this.ChildView user={item} key={item.id} />} />
         );
     }
 }
